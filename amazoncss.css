@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.nav {
+    background-color: #00453e;
+    color: white;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* 
+.border {
+    border: 1px solid transparent;
+} */
+
+.border:hover {
+    border: 1px solid white;
+}
+
+.a11{
+    padding-top: 9px;
+}
+
+.a111 {
+    height: 40px;
+}
+
+.a2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 4px;
+    margin-right: 6px;
+}
+
+.a21 {
+    padding-left: 16px;
+    padding-bottom: 2px;
+    font-size: 0.7rem;
+    color: #CCCCCC;
+}
+
+.a22 {
+    font-size: 0.9rem;
+
+}
+
+.a3 {
+    display: flex;
+    align-items: center;
+    /* width: 825px; */
+    width: 54%;
+    height: 60px;
+}
+
+#all {
+    width: 50px;
+    height: 43px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #e2e0e0;
+}
+
+#all:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+#search {
+    width: 100%;
+    height: 41.5px;
+    border: none;
+    cursor: text;
+}
+
+.a32 {
+    width: 100%;
+
+}
+
+.a33 {
+    background-color: #ffdfd7;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.a33:hover {
+    background-color: rgb(255, 205, 140);
+}
+
+
+.a4 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.a41{
+    display: flex;
+    padding: 20px 20px 5px 20px
+}
+#In{
+    padding: 0px 3px;
+}
+
+.a42{
+    padding: 9px 6px 9px 6px;
+}
+.a421{
+    /* color: #CCCCCC; */
+    font-size: 0.7rem;
+}
+
+.a422 {
+    font-size: 0.9rem;
+
+}
+.a43{
+    padding: 8px 9px;
+}
+.a431{
+    /* color: #CCCCCC; */
+    font-size: 0.7rem;
+}
+
+.a432{
+    font-size: 0.9rem;
+
+}
+
+.a44{
+    padding: 14px 8px;
+    font-size: 1.1rem;
+}
+
+/* nav bar 2 */
+
+.b1{
+    background-color: #195851;
+    display: flex;
+    height: 40px;
+    color: white;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 0.8rem;
+}
+.b11{
+    display: flex;
+}
+.b112{
+    padding-left: 8px;
+}
+.b12{
+    display: flex;
+}
+.b121 , .b11{
+    padding: 6px 11px;
+    border-radius: 3px;
+}
+
+/* backgroung image  */
+
+.back11{
+     background-image:  linear-gradient(transparent,transparent, rgb(255, 255, 255));
+    height: 600px;
+    width: 100%;
+   position: absolute;
+   z-index: 0;
+
+}
+@keyframes slide1{
+    0%{
+        opacity: 1;
+
+    }
+    /* 1%{
+        opacity: 1;
+    } */
+    24%{
+        opacity: 1;
+    }
+    26%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+  }
+
+  @keyframes slide2{
+    0%{
+        opacity: 0;
+
+    }
+    24%{
+        opacity: 0;
+    }
+    26%{
+        opacity: 1;
+    }
+    49%{
+        opacity: 1;
+    }
+    51%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+  @keyframes slide3{
+    0%{
+        opacity: 0;
+
+    }
+    49%{
+        opacity: 0;
+    }
+    51%{
+        opacity: 1;
+    }
+    74%{
+        opacity: 1;
+    }
+    76%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+  }
+
+  @keyframes slide4{
+    0%{
+        opacity: 0;
+
+    }
+    74%{
+        opacity: 0;
+    }
+    76%{
+        opacity: 1;
+    }
+    /* 99%{
+        opacity: 1;
+    } */
+    100%{
+        opacity: 1;
+    }
+  }
+.back1{
+    background-image: url(/clonewebsites/amazon/photo/bg2.jpg);
+    height: 600px;
+    width: 100%;
+    padding-left: 5px;
+    position: absolute;
+    z-index: -2;
+
+    animation-name: slide4;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    /* animation: slide1 infinite linear 9s  alternate ; 
+    animation-delay: 9s; */
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: example 5s linear 2s infinite alternate; */
+}
+
+
+.back2{
+    background-image: url(/clonewebsites/amazon/photo/bg3.jpg);
+    height: 600px;
+    width: 100%;
+    padding-left: 5px;
+    position: absolute;
+    z-index: -2;
+
+    animation-name: slide3;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+    /* animation: slide1 infinite linear 9s  alternate ; 
+    animation-delay: 6s; */
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: example 5s linear 2s infinite alternate; */
+}
+
+
+
+.back3{
+    background-image: url(/clonewebsites/amazon/photo/bg4.jpg);
+    height: 600px;
+    width: 100%;
+    padding-left: 5px;
+    position: absolute;
+    z-index: -2;
+    /* animation: slide3 infinite linear 3s  normal ; */
+    animation-name: slide2;
+    animation-duration: 12s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    /* animation: slide1 infinite linear 9s  alternate ;
+    animation-delay: 3s; */
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: example 5s linear 2s infinite alternate; */
+}
+
+
+
+.back4{
+    background-image: url(/clonewebsites/amazon/photo/background.jpg);
+    height: 600px;
+    width: 100%;
+    padding-left: 5px;
+    position: absolute;
+    z-index: -2;
+
+   /* animation: slide1 infinite linear 9s  alternate ; */
+   animation-name: slide1;
+   animation-duration: 12s;
+   animation-timing-function: ease;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+   animation-direction:alternate;
+   
+   
+   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: example 5s linear 2s infinite alternate; */
+}
+
+
+
+  #space{
+    height: 250px;
+    width: 100%;
+    /* background-color: #505b5a; */
+}
+/* main content */
+main{
+    z-index: 5;
+}
+
+.cc{
+    background-color: transparent;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative;
+    bottom: -45px; */
+}
+.cc1{
+    background-color: white;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    font-size: 0.8rem;
+    padding: 5px;
+    height: 100%;
+}
+
+/* boxes */
+
+.c{
+    background-color: rgba(204, 204, 204, 0.23);
+   z-index: 12;
+    /* position: absolute; */
+    /* top: 414px; */
+    width: 100%;
+    
+}
+.c11{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cimg{
+    width: 100%;
+    
+}
+.c1img{
+    width: 65%;
+    padding-top: 8px;
+}
+
+.c1113{
+    display: flex;
+    margin: 6px 0px ;
+    font-size: 0.85rem;
+}
+.c11131{
+    background-color: #cc0c39;
+    color: white;
+    padding: 4px;
+}
+.c11132{
+    color: #cc0c39 ;
+    padding: 4px 5px;
+}
+
+.c11141{
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+.c111{
+    width: 23%;
+    margin: 10px 0px;
+    background-color: white;
+    padding: 15px 20px;
+    z-index: 0;
+}
+.c1122{
+    margin: 10px 7px 20px 0px;
+}
+.c1121{
+    margin-top: 10px;
+}
+
+.linkhover:hover{
+     color: orange;
+     
+}
+.underline:hover{
+    text-decoration: underline;
+}
+
+.d{
+    color: white;
+}
+.d1{
+    display: flex;
+    height: 130px;
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    border: 2px solid rgb(158, 158, 158);
+    margin: 25px 0px 20px 0px;
+    color: rgb(83, 83, 83);
+}
+
+.d2{
+    height: 49px;
+    text-align: center;
+    background-color: rgb(51, 66, 84);
+    padding: 15px 0px;
+    color: white;
+    font-size: 0.8rem;
+}
+.d2:hover{
+    background-color:rgb(78, 93, 112) ;
+}
+
+.d3{
+    background-color: #232f3e;
+    display: flex;
+    justify-content: center;
+    font-size: 0.75rem;
+    padding-bottom: 20px;
+
+
+}
+
+.d3para{
+    padding: 8px 16px;
+}
+.d3para:hover{
+    text-decoration: underline;
+}
+.d3para1{
+    padding: 8px 16px;
+}
+.d31{
+    padding: 0px 9px;
+    margin: 20px 25px 10px 25px;
+}
+
+.d4{
+    background-color: #232f3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 2px solid rgb(80, 106, 134);
+    height: 100px;
+    font-size: 0.75rem;
+    /* padding: 2px 2px ; */
+}
+.d42{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+
+.d421{
+    border: 2px solid rgb(80, 106, 134);
+    padding: 6px 28px 6px 18px;
+    margin: 0px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.d421 span{
+    padding: 3px 12px;
+} 
+.d41 img{
+    padding-top: 8px;
+    height:40px;
+}
+
+.d5{
+    background-color: #131A22;
+    color: #dddddd;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 22px 20px 22px;
+}
+.d51{
+    width: 78%;
+}
+td{
+    height: 80px;
+    padding: 6px 25px;
+}
+.d5 span{
+    color: #99999999;
+}
+td span:hover{
+    text-decoration: underline;
+}
+td b:hover{
+    text-decoration: underline;
+}
+
+.d52{
+    background-color: #131A22;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 0px 33px 0px;
+    
+}
+
